@@ -16,7 +16,7 @@ function Right() {
 
 
     const getItem = () => {
-        Axios.get('https://newsapi.org/v2/everything?q=Apple&from=2022-02-03&sortBy=popularity&apiKey=a069e917715e4dffbbae4cfe81b8a316').then((res) => {
+        Axios.get('http://newsapi.org/v2/everything?q=Apple&from=2022-02-03&sortBy=popularity&apiKey=a069e917715e4dffbbae4cfe81b8a316').then((res) => {
             setArticles([res])
             setLoading(false);
 
